@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HUE - Minimalist Fashion</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <button
+          class="icon-button menu-button"
+          aria-label="Menu"
+          id="menu-button"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+        </button>
+
+        <a href="#" class="logo">HUE</a>
+
+        <div class="header-actions">
+          <button class="icon-button" aria-label="Search" id="search-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+          </button>
+          <button class="icon-button" aria-label="Cart" id="cart-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+              <path d="M3 6h18" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Minimalist Fashion</h1>
+          <p class="hero-subtitle">
+            Discover our collection of premium quality clothing with minimalist
+            design. Timeless pieces for your everyday wardrobe.
+          </p>
+          <a href="#featured-products" class="hero-button">Shop Now</a>
+        </div>
+      </section>
+
+      <!-- Featured Products -->
+      <section id="featured-products">
+        <div class="container">
+          <h2 class="section-title">Featured Products</h2>
+          <div class="products-grid" id="products-grid">
+            <!-- Products will be loaded here via JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories -->
+      <section class="categories">
+        <div class="container">
+          <h2 class="section-title">Shop by Category</h2>
+          <div class="categories-grid">
+            <a href="#" class="category-card">
+              <img
+                src="img/5.jpeg"
+                alt="Jackets"
+                class="category-image"
+              />
+              <div class="category-overlay">
+                <h3 class="category-name">Jackets</h3>
+              </div>
+            </a>
+            <a href="#" class="category-card">
+              <img
+                src="img/3.jpeg"
+                alt="Shirts"
+                class="category-image"
+              />
+              <div class="category-overlay">
+                <h3 class="category-name">Shirts</h3>
+              </div>
+            </a>
+            <a href="#" class="category-card">
+              <img
+                src="img/1.jpeg"
+                alt="Denim"
+                class="category-image"
+              />
+              <div class="category-overlay">
+                <h3 class="category-name">Denim</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="newsletter">
+        <div class="container">
+          <h2 class="newsletter-title">Stay Updated</h2>
+          <p class="newsletter-description">
+            Subscribe to our newsletter to receive updates on new arrivals,
+            special offers and other discount information.
+          </p>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              class="newsletter-input"
+              placeholder="Your email address"
+              required
+            />
+            <button type="submit" class="newsletter-button">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3 class="footer-column-title">Shop</h3>
+            <ul class="footer-links">
+              <li class="footer-link"><a href="#">New Arrivals</a></li>
+              <li class="footer-link"><a href="#">Best Sellers</a></li>
+              <li class="footer-link"><a href="#">Sale</a></li>
+              <li class="footer-link"><a href="#">Collections</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-column-title">Information</h3>
+            <ul class="footer-links">
+              <li class="footer-link"><a href="#">About Us</a></li>
+              <li class="footer-link"><a href="#">Sustainability</a></li>
+              <li class="footer-link"><a href="#">Careers</a></li>
+              <li class="footer-link"><a href="#">Press</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-column-title">Customer Care</h3>
+            <ul class="footer-links">
+              <li class="footer-link"><a href="#">Contact Us</a></li>
+              <li class="footer-link"><a href="#">Shipping & Returns</a></li>
+              <li class="footer-link"><a href="#">FAQ</a></li>
+              <li class="footer-link"><a href="#">Size Guide</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-column-title">Follow Us</h3>
+            <ul class="footer-links">
+              <li class="footer-link"><a href="#">Instagram</a></li>
+              <li class="footer-link"><a href="#">Facebook</a></li>
+              <li class="footer-link"><a href="#">Twitter</a></li>
+              <li class="footer-link"><a href="#">Pinterest</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="copyright">© 2025 HUE. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-header">
+        <h2 class="logo">HUE</h2>
+        <button class="mobile-menu-close" id="mobile-menu-close">×</button>
+      </div>
+      <div class="mobile-menu-links">
+        <a href="#" class="mobile-menu-link">New Arrivals</a>
+        <a href="#" class="mobile-menu-link">Jackets</a>
+        <a href="#" class="mobile-menu-link">Shirts</a>
+        <a href="#" class="mobile-menu-link">Denim</a>
+        <a href="#" class="mobile-menu-link">Sale</a>
+        <a href="#" class="mobile-menu-link">About</a>
+        <a href="#" class="mobile-menu-link">Contact</a>
+      </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cart-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Your Cart</h2>
+          <button class="modal-close" id="cart-modal-close">×</button>
+        </div>
+        <div class="modal-body" id="cart-modal-body">
+          <!-- Cart content will be loaded here via JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="modal quick-view-modal" id="quick-view-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Quick View</h2>
+          <button class="modal-close" id="quick-view-modal-close">×</button>
+        </div>
+        <div class="modal-body" id="quick-view-modal-body">
+          <!-- Quick view content will be loaded here via JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
